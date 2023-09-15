@@ -1,0 +1,46 @@
+//Task 2 = Simple calculator
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	float a,b;
+	char choice;
+	
+	cout<<"Enter the First number : ";
+	cin>>a;
+	
+	cout<<"Enter the Second number : ";
+	cin>>b;
+	
+	cout<<"Enter the choice :\n";
+	cout<<" + , - , * , /  =   ";
+	cin>>choice;	
+	
+	switch(choice)
+	{
+		case  '+':
+			cout<<"\n Addition :\n "<<a<<"+"<<b<<"="<<a+b;
+			break;
+		
+		case '-' :
+			cout<<"\n Substraction :\n "<<a<<"-"<<b<<"="<<a-b;
+			break;
+			
+		case '*' :
+			cout<<"\n Multiplication :\n "<<a<<"*"<<b<<"="<<a*b;
+			break;
+			
+		case '/' :
+			cout<<"\n Division :\n "<<a<<"/"<<b<<"="<<a/b;
+			break;
+		
+		default :
+			cout<<"\n Invalid operation "<<endl;
+			cout<<"Exit";
+			break;		
+		
+	}
+	return 0;	
+}
+	
