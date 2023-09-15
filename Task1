@@ -1,0 +1,33 @@
+//Task 1 = Number guessing Game
+#include <iostream>
+#include<cstdlib>
+#include <ctime>
+using namespace std;
+int main()
+{
+    int Number = 1,count = 0;
+    srand(time(0));
+    int Random = rand()%100;
+    // cout<<" "<<Random;
+    cout<<endl;
+    
+    while(Number<=100)
+    {
+        cout<<"\n Enter a Number to guess between series 1 to 100 : ";
+        cin>>Number;
+        count += 1;
+       
+        if(Random==Number)
+        {
+            cout<<" The Number is correct ! "<<endl;
+        }
+        else if(Random<Number && Number>=50)
+        {
+            cout<<" The number is too high ! "<<endl;
+        }
+        else
+        {
+            cout<<" The number is too low ! "<<endl;
+        }
+    }
+}
